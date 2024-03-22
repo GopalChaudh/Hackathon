@@ -4,7 +4,7 @@ export default function Login() {
 	
 	return (
 		<div class="login-container">
-	<div class="login-screen">
+		<div class="login-screen">
 		<div class="login-screen__content">
 			<form class="login">
 				<div class="login__field">
@@ -18,7 +18,7 @@ export default function Login() {
 				<button class="button login__submit">
 					<span class="button__text">Log In Now</span>
 					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
+				</button>
 			</form>
 			<div class="social-login">
 				<h3>log in via</h3>

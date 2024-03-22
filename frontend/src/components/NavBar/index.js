@@ -44,7 +44,7 @@ function NavBar() {
         </Show>
         <Show above="sm">
           <HStack w="100%" justify="flex-end">
-          {cookiesExist && ( // Render the following only if cookies exist
+          {!cookiesExist && ( // Render the following only if cookies exist
         <Link as={NavLink} to="/login">
           <Button colorScheme="gray" fontWeight="400">
             Sign In
