@@ -16,37 +16,37 @@ const featuresData = [
   {
     icon: FiBriefcase,
     iconBg: "#1F7CFF",
-    heading: "Share Insights",
-    text: "Working together with your team to make decisions",
+    heading: "Join Community",
+    text: "Join the community that you are interested in",
   },
   {
     icon: FiSend,
     iconBg: "#F75C4E",
-    heading: "Track Leads",
-    text: "See where your money goes and comes in business",
+    heading: "Donation Report",
+    text: "Get the report of the donation you have made",
   },
   {
     icon: FiWifiOff,
     iconBg: "#191046",
-    heading: "Offline Mode",
-    text: "Use the feature while off from internet? sure can",
+    heading: "Make Community",
+    text: "Create your own community and invite people to join",
   },
   {
     icon: FiTrello,
     iconBg: "#FF1FB3",
-    heading: "Kanban Mode",
-    text: "Organize the report that easy to be understand",
+    heading: "Create Event",
+    text: "Create an event and invite people to join",
   },
   {
     icon: FiGift,
     iconBg: "#5C4EF7",
-    heading: "Reward System",
-    text: "Motivate your team working harder and receive a gift",
+    heading: "Points",
+    text: "Get points for every donation you make and achive greater Rankings",
   },
   {
     icon: FiGlobe,
     iconBg: "#F7954E",
-    heading: "189 Country",
+    heading: "Global Reach",
     text: "Working together worldwide people from anywhere",
   },
 ];
@@ -59,15 +59,15 @@ function Features() {
         <VStack spacing="1.25rem">
           <VStack spacing="0.5rem">
             <Text fontWeight="700" color="red.400" textAlign="center">
-              WORK BETTER
+              Engage
             </Text>
             <Heading as="h2" size="lg" textAlign="center">
-              For Your Business
+              Volunteer For The Better Future
             </Heading>
           </VStack>
           <Text color="muted" maxW="25rem" textAlign="center" lineHeight="2rem">
-            We did research what your company needs and here we are providing
-            all of them just for you
+            We are the platform to provide you with a way to contribute to the society,
+            and help you find the right communities to engage with.
           </Text>
         </VStack>
         {/* Grid */}

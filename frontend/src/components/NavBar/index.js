@@ -25,14 +25,14 @@ function NavBar() {
             <Link as={NavLink} to="/">
               Home
             </Link>
-            <Link as={NavLink} to="/features">
-              Features
+            <Link as={NavLink} to="/about">
+              About
             </Link>
-            <Link as={NavLink} to="/showcase">
-              Showcase
+            <Link as={NavLink} to="/events">
+              Events
             </Link>
-            <Link as={NavLink} to="/pricing">
-              Pricing
+            <Link as={NavLink} to="/organisations">
+              ORGs
             </Link>
           </HStack>
         </Show>

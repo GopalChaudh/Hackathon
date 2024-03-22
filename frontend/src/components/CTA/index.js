@@ -10,8 +10,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-import EmailInput from "./EmailInput";
-import VideoPlayButton from "assets/svg/video-play-button.svg";
 
 function CTA() {
   return (
@@ -29,7 +27,7 @@ function CTA() {
         {/* Video Preview */}
         <Box position="relative">
           <Image
-            src="assets/images/video-preview.png"
+            src="assets/images/video-preview.jpg"
             alt="Video preview"
             borderRadius="2.5rem"
             maxW={{ base: "522px", xl: "635px" }}
@@ -43,7 +41,6 @@ function CTA() {
             translateX="-50%"
             translateY="-50%"
           >
-            <VideoPlayButton />
           </Box>
         </Box>
         {/* Text */}
@@ -55,14 +52,14 @@ function CTA() {
               color="red.400"
               textAlign={{ base: "center", xl: "start" }}
             >
-              SAVE MORE TIME
+              CONTRIBUTE
             </Text>
             <Heading
               as="h2"
               size="lg"
               textAlign={{ base: "center", xl: "start" }}
             >
-              And Boost Productivity
+              And make the world a better place!
             </Heading>
           </VStack>
           {/* Text */}
@@ -73,14 +70,11 @@ function CTA() {
             textAlign={{ base: "center", xl: "start" }}
             lineHeight="2rem"
           >
-            Your employees can bring any success into your business, so we need
-            to take care of them
+            It is not all Bell and whistles and sunshine and rainbows. 
+            It is hard work but it is worth it and that is just life.
           </Text>
-          {/* Input */}
-          <Box pt="2rem">
-            <EmailInput />
-          </Box>
         </VStack>
+        <Box></Box>
       </Stack>
     </Container>
   );

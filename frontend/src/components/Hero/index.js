@@ -25,11 +25,11 @@ function Hero() {
           spacing={{ base: "1.6rem", md: "1.65rem" }}
         >
           <Heading as="h1" size="3xl">
-            Manage Payroll Like an Expert
+            EventHub: Community Engagement Platform
           </Heading>
           <Text color="muted" lineHeight="taller">
-            Payna is helping you to setting up the payroll without required any
-            finance skills or knowledge before
+                A platform to help you find and engage with communities that matter
+                to you.
           </Text>
           <Button colorScheme="blue">Get Started</Button>
         </VStack>
