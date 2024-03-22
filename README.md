@@ -54,6 +54,58 @@ npm start
 _________________
 
 
+## EventHub Backend
+
+Welcome to the backend of EventHub, a community event organizer platform! This README provides an overview of the backend architecture, setup instructions, and dependencies used in this project.
+
+### Technologies Used
+
+The backend of EventHub is built using the following technologies and packages:
+
+- **Node.js**: A JavaScript runtime environment for executing JavaScript code server-side.
+- **Express**: A minimalist web framework for Node.js that simplifies the process of building APIs and web applications.
+- **TypeScript**: A superset of JavaScript that adds static typing and other features to improve code quality and maintainability.
+- **Mongoose**: An Object Data Modeling (ODM) library for MongoDB and Node.js, providing a straightforward way to model application data and interact with MongoDB databases.
+- **cors**: Middleware for Express to enable Cross-Origin Resource Sharing (CORS) in the server, allowing the frontend to make requests to the backend from different origins.
+- **dotenv**: A module to load environment variables from a `.env` file into `process.env`, making it easier to manage sensitive configuration data.
+- **nodemon**: A utility that monitors changes in files and automatically restarts the server during development, improving developer productivity.
+- **ts-node**: A TypeScript execution and REPL for Node.js, allowing developers to run TypeScript code directly without prior compilation.
+
+### Setup Instructions
+
+To set up the backend of EventHub locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your/repository.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd project-directory
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Create a `.env` file in the root directory and add necessary environment variables, such as database connection URI, API keys, and other configuration details.
+
+
+5. Start the server:
+```bash
+npm start
+```
+
+The server will be running on the specified port, and you can now make requests to the backend API.
+
+
+_________________
+
+
+
 ## Database Schema
 
 This repository contains the schema definitions for a community website, including schemas for users, organizations, posts, and events.
