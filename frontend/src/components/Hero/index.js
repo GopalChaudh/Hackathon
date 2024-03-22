@@ -35,7 +35,7 @@ function Hero() {
         </VStack>
 
         <Show above="xl">
-          <Image src="assets/images/hero-image.png" alt="Hero image" />
+          <Image src="assets/images/hero-image.jpg" alt="Hero image" />
         </Show>
       </HStack>
     </Container>

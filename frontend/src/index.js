@@ -8,12 +8,12 @@ import App from "./App";
 import theme from "theme";
 
 ReactDOM.render(
-    <React.StrictMode>
-        <ChakraProvider theme={theme}>
-            <Router> {/* Use BrowserRouter instead of HashRouter */}
-                <App />
-            </Router>
-        </ChakraProvider>
-    </React.StrictMode>,
-    document.getElementById("root"),
+  <React.StrictMode>
+    <ChakraProvider theme={theme}>
+      <Router> {/* Use BrowserRouter instead of HashRouter */}
+        <App />
+      </Router>
+    </ChakraProvider>
+  </React.StrictMode>,
+  document.getElementById("root"),
 );
