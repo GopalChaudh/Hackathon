@@ -1,4 +1,5 @@
-# # Community Event Organizer Platform
+
+# EventHub
 
 Welcome to our open-source web platform for community event organization! This platform provides a space for organizations to start events, seek donations and volunteers, and engage with users interested in community initiatives. Users can create both organization and volunteer accounts, host events, join events, and interact with the community through posts, likes, and comments.
 
@@ -50,6 +51,130 @@ npm start
 
 7. Access the platform through your web browser at `http://localhost:3000`.
 
+_________________
+
+
+## Database Schema
+
+This repository contains the schema definitions for a community website, including schemas for users, organizations, posts, and events.
+
+### Root Schema (Global Schema)
+
+#### Description:
+The root schema serves as the backbone for the entire community website, connecting users, organizations, posts, and events.
+
+#### JSON Format:
+```json
+{
+  "users": [],
+  "organizations": [],
+  "events": [],
+  "posts": []
+}
+```
+
+
+### User Schema
+#### Description:
+The user schema represents a user profile on the community website.
+
+#### JSON Format:
+```json
+{
+  "_id": "ObjectId",
+  "username": "string",
+  "email": "string",
+  "password": "string",
+  "name": "string",
+  "bio": "string",
+  "profilePic": "string",
+  "socialMediaLinks": {
+    "facebook": "string",
+    "twitter": "string",
+    "instagram": "string",
+    "linkedin": "string"
+  },
+  "dateJoined": "Date",
+  "posts": ["ObjectId"],
+  "organizations": ["ObjectId"],
+  "eventsParticipated": ["ObjectId"],
+  "followers": ["ObjectId"],
+  "following": ["ObjectId"],
+  "volunteerRating": "number",
+  "totalFollowers": "number",
+  "totalFollowing": "number"
+}
+```
+### Organization Schema
+#### Description:
+The organization schema represents an organization on the community website.
+
+#### JSON Format:
+```json
+{
+  "_id": "ObjectId",
+  "name": "string",
+  "description": "string",
+  "admins": ["ObjectId"],
+  "members": ["ObjectId"],
+  "events": ["ObjectId"],
+  "posts": ["ObjectId"],
+  "creationDate": "Date",
+  "socialMediaLinks": {
+    "facebook": "string",
+    "twitter": "string",
+    "instagram": "string",
+    "linkedin": "string"
+  },
+  "contactInformation": {
+    "email": "string",
+    "phone": "string"
+  },
+  "logo": "string",
+  "coverPhoto": "string",
+  "moderators": ["ObjectId"],
+  "chatChannels": ["string"],
+  "tags": ["string"],
+  "applicationList": ["ObjectId"],
+  "founder": "ObjectId"
+}
+```
+### Post Schema
+#### Description:
+The post schema represents a post made by users on the community website.
+
+#### JSON Format:
+```json
+{
+  "_id": "ObjectId",
+  "content": "string",
+  "authorId": "ObjectId",
+  "dateTime": "Date",
+  "likes": "number",
+  "comments": [
+    {
+      "commentId": "ObjectId",
+      "content": "string",
+      "authorId": "ObjectId",
+      "dateTime": "Date",
+      "likes": "number"
+    }
+  ],
+  "attachments": ["string"],
+  "location": {
+    "latitude": "number",
+    "longitude": "number"
+  },
+  "reactions": {
+    "like": "number",
+    "love": "number",
+    "laugh": "number"
+  },
+  "reports": "number"
+}
+```
+
+
 ## Contributing
 
 We welcome contributions from the community to enhance this platform. Here's how you can contribute:
@@ -74,6 +199,8 @@ For any queries or issues, please contact [support@example.com](mailto:support@e
 
 We would like to thank all contributors and users who have helped improve and use this platform to serve community causes.
 
----
+___
+
+
 
 **Note:** This README provides basic setup instructions. For detailed documentation, refer to the project's documentation directory or online documentation.
