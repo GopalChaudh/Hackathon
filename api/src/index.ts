@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import DBConnection from './DB/db';
 import auth from './Routers/auth/auth';
 import cors from 'cors';
+import addpost from './Routers/addvideos/addvideos'
 // config
 dotenv.config(); // configuring .env file
 
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false })); // Use built-in express.urlencoded middleware   
 app.use('/auth',auth);
+app.use('/post',addpost);
 
 app.get('/', (req: Request, res: Response) => {
   res.status(200).json({

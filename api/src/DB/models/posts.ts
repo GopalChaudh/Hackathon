@@ -3,8 +3,8 @@ import mongoose, { Schema, Document } from 'mongoose';
 
 
 
-interface UserDocument extends Document {
-    author:string; // author userName
+interface PostDocument extends Document {
+    author:string; // author PostName
     image:string;
     title:String;
     description:string;
@@ -13,7 +13,7 @@ interface UserDocument extends Document {
 }
 
 
-const userSchema = new Schema<UserDocument>({
+const PostSchema = new Schema<PostDocument>({
     author:{
         type:String,
     },
@@ -33,6 +33,6 @@ const userSchema = new Schema<UserDocument>({
  
 });
 
-const UserModel = mongoose.model<UserDocument>('User', userSchema);
+const postModel = mongoose.model<PostDocument>('Post', PostSchema);
 
-export default UserModel;
+export default postModel;

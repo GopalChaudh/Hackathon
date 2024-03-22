@@ -61,7 +61,7 @@ router.post('/register', async (req: Request, res: Response) => {
             message: "Data saved successfully"
         }); // 201 status for resource created
     } catch (error : any) {
-        console.error('Error in RegisterHandler:', error);
+        console.log('Error in RegisterHandler:', error);
         res.status(500).json({
             status: 500,
             message: error.message || "Internal server error"
@@ -69,7 +69,6 @@ router.post('/register', async (req: Request, res: Response) => {
     }
 });
 
-router.post('/login', loginHandler);
 router.post('/login', loginHandler);
 
 export default router;
