@@ -25,7 +25,7 @@ function Hero() {
           spacing={{ base: "1.6rem", md: "1.65rem" }}
         >
           <Heading as="h1" size="3xl">
-            EventHub: Community Engagement Platform
+            Community Engagement
           </Heading>
           <Text color="muted" lineHeight="taller">
                 A platform to help you find and engage with communities that matter
