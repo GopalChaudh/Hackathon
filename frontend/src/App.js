@@ -33,7 +33,6 @@ export default function App() {
     <>
       <NavBar />
       <Routes>
-        {/* <Route path="/404" element={<NotFound />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
