@@ -5,6 +5,7 @@ import React from "react";
 Event.propTypes = {
   eventName: PropTypes.string,
   eventDescription: PropTypes.string,
+  eventImage: PropTypes.string,
 };
 
 function Event(props) {
@@ -14,7 +15,7 @@ function Event(props) {
         <article>
           <div className="article-wrapper">
             <figure>
-              <img src="https://picsum.photos/id/1011/800/450" alt="" />
+              <img src={props.eventImage} alt="" />
             </figure>
             <div className="article-body">
               <h2>{props.eventName}</h2>

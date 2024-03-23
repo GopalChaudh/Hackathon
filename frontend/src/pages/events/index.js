@@ -9,13 +9,14 @@ Events.propTypes = {
       key: PropTypes.oneOfType([PropTypes.number]),
       title: PropTypes.string,
       description: PropTypes.string,
+      image: PropTypes.string,
     })
   ),
 };
 
 function Events(props) {
   const eventList = props.events.map(event => {
-    return <li key={event.key}><Event eventName={event.title} eventDescription={event.description} /></li>;
+    return <li key={event.key}><Event eventName={event.title} eventDescription={event.description} eventImage={event.image} /></li>;
   });
   return (
     <ul className="eventList">

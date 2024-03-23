@@ -7,8 +7,8 @@ import Logo from "assets/svg/logo.svg";
 
 function NavBar() {
   const checkForCookies = () => {
-    return document.cookie.split(';').some((cookie) => {
-      return cookie.trim().startsWith('yourCookieName='); // Replace 'yourCookieName' with the name of your cookie
+    return document.cookie.split(";").some((cookie) => {
+      return cookie.trim().startsWith("yourCookieName="); // Replace 'yourCookieName' with the name of your cookie
     });
   };
   const cookiesExist = checkForCookies();
@@ -24,6 +24,7 @@ function NavBar() {
             _focus={{ boxShadow: "none" }}
           >
             <Logo />
+            <h1>EventHub</h1>
           </Link>
         </Box>
         <Show above="lg">
@@ -44,13 +45,13 @@ function NavBar() {
         </Show>
         <Show above="sm">
           <HStack w="100%" justify="flex-end">
-          {!cookiesExist && ( // Render the following only if cookies exist
-        <Link as={NavLink} to="/login">
-          <Button colorScheme="gray" fontWeight="400">
-            Sign In
-          </Button>
-        </Link>
-      )}
+            {!cookiesExist && ( // Render the following only if cookies exist
+              <Link as={NavLink} to="/login">
+                <Button colorScheme="gray" fontWeight="400">
+                  Sign In
+                </Button>
+              </Link>
+            )}
           </HStack>
         </Show>
       </HStack>
