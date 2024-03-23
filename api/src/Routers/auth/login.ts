@@ -67,6 +67,7 @@ export default async function loginHandler(req: Request, res: Response) {
 
         return res.status(200).json({
             status: 200,
+            data:userJwtToken,
             message: 'User authenticated successfully'
         });
 
